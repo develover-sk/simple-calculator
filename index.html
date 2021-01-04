@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.flaticon.com/svg/static/icons/svg/550/550607.svg" type="image/x-icon">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calc">
+        <details>
+            <summary>Addition (+)</summary>
+            <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+                <input type="number" id="a" value="0"> + <input type="number" id="b" value="0"> = <output name="x" for="a b"></output><br>
+            </form>
+
+        </details>
+        <details>
+            <summary>Subtraction (-)</summary>
+            <form oninput="x.value=parseInt(a.value) - parseInt(b.value)">
+                <input type="number" id="a" value="0"> - <input type="number" id="b" value="0"> = <output name="x" for="a b"></output><br>
+            </form>
+        </details>
+        <details>
+            <summary>Multiplication (*)</summary>
+            <form oninput="x.value=parseInt(a.value) * parseInt(b.value)">
+                <input type="number" id="a" value="0"> * <input type="number" id="b" value="0"> = <output name="x" for="a b"></output><br>
+            </form>
+        </details>
+        <details>
+            <summary>Division ( / )</summary>
+            <form oninput="x.value=parseInt(a.value) / parseInt(b.value)">
+                <input type="number" id="a" value="0"> / <input type="number" id="b" value="0"> = <output name="x" for="a b"></output><br>
+            </form>
+        </details>
+        <details>
+            <summary>Remainder / Modulo (%)</summary>
+            <form oninput="x.value=parseInt(a.value) % parseInt(b.value)">
+                <input type="number" id="a" value="0"> % <input type="number" id="b" value="0"> = <output name="x" for="a b"></output><br>
+            </form>
+        </details>
+        <details>
+            <summary>Exponent (^)</summary>
+            <ul>
+                <details>
+                    <summary>Square (^2)</summary>
+                    <form oninput="x.value=parseInt(a.value) * parseInt(a.value)">
+                        <input type="number" id="a" value="0"> = <output name="x" for="a"></output><br>
+                    </form>
+                </details>
+                <details>
+                    <summary>Cube (^3)</summary>
+                    <form oninput="x.value=parseInt(a.value) * parseInt(a.value) * parseInt(a.value)">
+                        <input type="number" id="a" value="0"> = <output name="x" for="a"></output><br>
+                    </form>
+                </details>
+                <details>
+                    <summary>Other (^n)</summary>
+                    <form oninput="x.value=Math.pow((a.value),parseInt(b.value))">
+                        <input type="number" id="a" value="0"> ^ <input type="number" id="b" value="0"> = <output name="x" for="a b"></output><br>
+                    </form>
+                </details>
+            </ul>
+        </details>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(227, 183, 240);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+body:hover {
+    cursor: default;
+}
+
+form {
+    text-align: center;
+    padding: 10px;
+}
+
+.calc {
+    margin: auto;
+    width: 50%;
+    padding: 10% 0;
+}
+
+input[type=number] {
+    width: 30%;
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+output {
+    border: 1px solid black;
+    padding: 0.1% 10%;
+    margin: 1%;
+    background-color: white;
+}
