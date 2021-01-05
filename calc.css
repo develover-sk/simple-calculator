@@ -27,12 +27,12 @@ input[type=number] {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0;
+    margin: 5%;
 }
 
 output {
     border: 1px solid black;
-    padding: 0.1% 10%;
-    margin: 1%;
+    padding: 0% 2%;
+    margin: 10px 0%;
     background-color: white;
 }
